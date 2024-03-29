@@ -31,7 +31,6 @@ model.load_state_dict(torch.load('weights.pt', map_location=torch.device('cpu'))
 
 dp = Dispatcher() 
 TOKEN = os.getenv('TOKEN')
-#TOKEN="6897174789:AAH8EDJrQbgapAkdggamraRF8rGaCWAcbas"
 bot = Bot(token=TOKEN)
 
 logging.basicConfig(level=logging.INFO, filename="py_log.log",filemode="w",
